@@ -1,10 +1,16 @@
-package com.TallaVa;
+package com.TallaVa.;
 
 public class Main {
 
     public static void main(String[] args) {
 
+       int i = 0;
 
-        System.out.printf("Hello Peopldsfsfe");
+       while (i<5)
+       {
+           System.out.println("I is: " + i);
+           i++;
+
+       }
     }
 }
