@@ -1,4 +1,4 @@
-package com.TallaVa.;
+package com.TallaVa;
 
 public class Main {
 
