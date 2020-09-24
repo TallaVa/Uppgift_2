@@ -6,8 +6,14 @@ public class FromTheBook {
 
         // alla uppgifter inför inlämning2
 
-        System.out.println("lets begin :)");
 
+        int B = 0;
+
+        while (B < 10)
+        {
+            System.out.println("YEY JAVA");
+            B++;
+        }
     }
 
 }
