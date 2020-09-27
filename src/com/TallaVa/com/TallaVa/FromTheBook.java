@@ -1,6 +1,7 @@
 package com.TallaVa;
 
 import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class FromTheBook {
 
@@ -30,21 +31,20 @@ public class FromTheBook {
 
         // CheckPoint 4.5
 
-
         String input;
-        char answer;
+        Scanner keyboard;
+        keyboard = new Scanner (System.in);
 
-        input = JOptionPane.showInputDialog("Write 'Y', 'y', 'N' or 'n' : ");
-        answer = input.charAt(0);
+        System.out.println("Enter Y/N to continue: ");
+        input = keyboard.next();
 
-        while ((answer != 'Y') || (answer != 'y'))
+        while (!input.equalsIgnoreCase("y" + "n"))
         {
-            input = JOptionPane.showInputDialog("this is not the right character please try again: ");
-            answer = input.charAt(0);
-
+            System.out.println("WRONG. Try again :(");
+            input = keyboard.next();
         }
 
-        JOptionPane.showMessageDialog(null, " You answerd :" +answer +" wich is correct");
+        System.out.println("Program terminated");
 
         System.exit(0);
     }
