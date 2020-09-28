@@ -29,7 +29,7 @@ public class FromTheBook {
 
          */
 
-        // CheckPoint 4.5
+        /* CheckPoint 4.5
 
         String input;
         Scanner keyboard;
@@ -38,15 +38,25 @@ public class FromTheBook {
         System.out.println("Enter Y/N to continue: ");
         input = keyboard.next();
 
-        while (!input.equalsIgnoreCase("y" + "n"))
+        while (!input.equalsIgnoreCase("y"))
         {
-            System.out.println("WRONG. Try again :(");
-            input = keyboard.next();
+
+            while (!input.equalsIgnoreCase("n"))
+            {
+                System.out.println("WRONG. Try again :(");
+                input = keyboard.next();
+            }
+            System.out.println("Program terminated");
+            System.exit(0);
         }
 
         System.out.println("Program terminated");
-
         System.exit(0);
+
+         */
+
+
+
     }
 
 }
