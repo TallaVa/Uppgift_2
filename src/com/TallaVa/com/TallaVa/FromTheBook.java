@@ -29,7 +29,7 @@ public class FromTheBook {
 
          */
 
-        /* CheckPoint 4.5
+        /* CheckPoint 4.5. CheckPoint får vi om vi ändrar "y" till "Yes"
 
         String input;
         Scanner keyboard;
@@ -54,6 +54,8 @@ public class FromTheBook {
         System.exit(0);
 
          */
+
+
 
 
 
