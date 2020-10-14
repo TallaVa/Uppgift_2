@@ -1,7 +1,7 @@
 package com.TallaVa;
 
 import javax.swing.JOptionPane;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class FromTheBook {
 
@@ -56,9 +56,35 @@ public class FromTheBook {
          */
 
 
+        // Code Listing 4-10
 
+        //Variables
+        int days;           //the number of days
+        double sales;       //a day's sales figure
+        double totalSales;  //accumulator
+        String input;       //to hold the user's input
 
+        //get the number of days
+        input = JOptionPane.showInputDialog("For how many days do you have sales" +
+                                " figures");
+        days = Integer.parseInt(input);
 
+        //set the accumulator to 0.
+        totalSales = 0.0;
+
+        //get the sales figures and calculate a running total.
+        for (int count = 1; count <= days; count++)
+        {
+            input = JOptionPane.showInputDialog("Enter the sales " +
+                    "fo day " + ": ");
+            sales = Double.parseDouble(input);
+            totalSales += sales;                //add sales to totalSales.
+        }
+
+        // display the total sales.
+        JOptionPane.showMessageDialog(null, String.format("The sales are $%,.2f", totalSales));
+
+        System.exit(0);
     }
 
 }
