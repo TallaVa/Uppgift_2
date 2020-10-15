@@ -1,6 +1,7 @@
 package com.TallaVa;
 
 import javax.swing.JOptionPane;
+import java.awt.*;
 import java.util.Scanner;
 
 public class FromTheBook {
@@ -151,7 +152,7 @@ public class FromTheBook {
              */
         //The Clock program
 
-        // simulate the clock
+        /* simulate the clock
             for (int hours = 1; hours <= 1; hours++)
             {
                 for (int minutes = 0; minutes <= 10; minutes ++)
@@ -162,6 +163,47 @@ public class FromTheBook {
                     }
                 }
             }
+
+         */
+
+        //Code Listing 4.13
+
+        int numStudents,        //number of students
+                numTests,       //number of tests per stdents
+                score,          //test score
+                total;          //accumulator for test score
+        double average;         //average test score
+
+        //Create a scanner object for keyboard input
+        Scanner keyboard = new Scanner(System.in);
+
+        //Get the number of students.
+        System.out.println("How many students do you have? ");
+        numStudents = keyboard.nextInt();
+
+        //get the numer of test scores per student.
+        System.out.print("How many testscores per student? ");
+        numTests = keyboard.nextInt();
+
+        //Process all the students.
+        for (int student = 1; student <= numStudents; student++)
+        {
+            total = 0;  // Set the accumulator to zero.
+
+            //get the test scores for a student.
+            System.out.println("Student number " + student);
+            System.out.println("------------------");
+            for (int test = 1; test <= numTests; student++)
+            {
+                System.out.print("Enter score " + test + ": ");
+                score = keyboard.nextInt();
+                total += score; // add score to total.
+            }
+
+            //Calculate and display the average.
+            average = total / numTests;
+            System.out.printf("The average for student %d is %.1f.\n\n", student, average);
+        }
 
     }
 
