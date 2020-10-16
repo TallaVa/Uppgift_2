@@ -167,7 +167,7 @@ public class FromTheBook {
          */
 
         //Code Listing 4.13
-
+        
         int numStudents,        //number of students
                 numTests,       //number of tests per stdents
                 score,          //test score
@@ -193,7 +193,7 @@ public class FromTheBook {
             //get the test scores for a student.
             System.out.println("Student number " + student);
             System.out.println("------------------");
-            for (int test = 1; test <= numTests; student++)
+            for (int test = 1; test <= numTests; test++)
             {
                 System.out.print("Enter score " + test + ": ");
                 score = keyboard.nextInt();
@@ -204,6 +204,31 @@ public class FromTheBook {
             average = total / numTests;
             System.out.printf("The average for student %d is %.1f.\n\n", student, average);
         }
+        */
+        /*
+        int rows, cols;
+
+        //Create a Scanner object for keyboard input
+        Scanner keyboard = new Scanner(System.in);
+
+        //Get the number of rows and colums.
+        System.out.print("How many rows? ");
+        rows = keyboard.nextInt();
+
+       // System.out.print("How many colums? ");
+        //cols = keyboard.nextInt();
+
+        for (int r = 0; r < rows; r++)
+        {
+            for (int c = 0; c < (r+1); c++)
+            {
+                System.out.print(" ");
+            }
+            System.out.println("*");
+        }
+        */
+
+        
 
     }
 
