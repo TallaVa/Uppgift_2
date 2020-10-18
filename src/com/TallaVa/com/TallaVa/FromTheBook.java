@@ -268,7 +268,7 @@ public class FromTheBook {
             outputFile.println(friendName);
         }
 
-        //Close the file.
+        //Close the file
         outputFile.close();
         System.out.println("Data written to the file.");
     }
