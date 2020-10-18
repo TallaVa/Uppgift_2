@@ -1,12 +1,13 @@
 package com.TallaVa;
 
 import javax.swing.JOptionPane;
-import java.awt.*;
+//import java.awt.*;
 import java.util.Scanner;
+import java.io.*;
 
 public class FromTheBook {
 
-    public static void main(String [] args){
+    public static void main(String [] args) throws IOException {
 
         // alla uppgifter inför inlämning2
 
@@ -204,8 +205,8 @@ public class FromTheBook {
             average = total / numTests;
             System.out.printf("The average for student %d is %.1f.\n\n", student, average);
         }
-        */
-        /*
+        
+        
         int rows, cols;
 
         //Create a Scanner object for keyboard input
@@ -215,8 +216,8 @@ public class FromTheBook {
         System.out.print("How many rows? ");
         rows = keyboard.nextInt();
 
-       // System.out.print("How many colums? ");
-        //cols = keyboard.nextInt();
+        System.out.print("How many colums? ");
+        cols = keyboard.nextInt();
 
         for (int r = 0; r < rows; r++)
         {
@@ -226,10 +227,50 @@ public class FromTheBook {
             }
             System.out.println("*");
         }
-        */
-
         
+*/
+        //Test file writer .
+        /*
+        String filename;
+        filename = JOptionPane.showInputDialog("Enter the filename.");
+        PrintWriter outputFile = new PrintWriter(filename);
+        outputFile.println("behram");
+        outputFile.close();
+    */
 
+    // Code Listing 4-17
+
+        String filename;    //File name
+        String friendName;  //Friend's name
+        int numFriends;     //Number of friends
+
+        //Create a scanner
+        Scanner keyboard = new Scanner(System.in);
+
+        //Consume the remaining newline character.
+        keyboard.nextLine();
+        
+        //Get the filename.
+        System.out.print("Enter the filename: ");
+        filename = keyboard.nextLine();
+
+        //Open the file.
+        PrintWriter outputFile = new PrintWriter(filename);
+
+        //Get data and write it to file.
+        for (int i = 1; i <= numFriends; i++)
+        {
+            //Get the name of a friend.
+            System.out.print("Enter the name of firend number" + i + ": ");
+            friendName = keyboard.nextLine();
+
+            //Write the name to the file.
+            outputFile.println(friendName);
+        }
+
+        //Close the file.
+        outputFile.close();
+        System.out.println("Data written to the file.");
     }
 
 }
