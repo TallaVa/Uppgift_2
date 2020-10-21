@@ -238,7 +238,7 @@ public class FromTheBook {
         outputFile.close();
     */
 
-    // Code Listing 4-17
+    /* Code Listing 4-17
 
         String filename;    //File name
         String friendName;  //Friend's name
@@ -275,6 +275,14 @@ public class FromTheBook {
         //Close the file
         outputFile.close();
         System.out.println("Data written to the file.");
+        */
+
+
+        // Hur man skriver något på ett enkelt sätt . . eller lägger till annat i en existerande fil.
+        FileWriter fWriter = new FileWriter("Behram", true);
+        PrintWriter outputFile = new PrintWriter(fWriter);
+        outputFile.println("Sejdi");
+        outputFile.close();
     }
 
 }
