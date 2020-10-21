@@ -8,7 +8,7 @@ public class Main {
 
         /*
          This program demonstrates a user controlled loop.
-         */
+         
 
         int score1, score2, score3;  // Three test scores
         double average;              // Average test score
@@ -51,6 +51,8 @@ public class Main {
             repeat = input.charAt(0);     // Get the first char.
 
         } while (repeat == 'Y' || repeat == 'y');
+
+        */
     }
 }
 

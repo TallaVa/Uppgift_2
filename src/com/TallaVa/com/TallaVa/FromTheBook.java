@@ -238,7 +238,7 @@ public class FromTheBook {
         outputFile.close();
     */
 
-    // Code Listing 4-17
+    /* Code Listing 4-17
 
         String filename;    //File name
         String friendName;  //Friend's name
@@ -248,7 +248,11 @@ public class FromTheBook {
         Scanner keyboard = new Scanner(System.in);
 
         //Get the number of friends.
+<<<<<<< HEAD
         System.out.print("How many friends do you have?");
+=======
+        System.out.print("How many friends do you have ?. ");
+>>>>>>> de65e7b2a8771dc1e1742de30c6f6f6e6d4da304
         numFriends = keyboard.nextInt();
 
         //Consume the remaining newline character.
@@ -275,6 +279,17 @@ public class FromTheBook {
         //Close the file
         outputFile.close();
         System.out.println("Data written to the file.");
+        */
+
+
+        // Hur man skriver något på ett enkelt sätt . . eller lägger till annat i en existerande fil.
+        FileWriter fWriter = new FileWriter("C:\\Users\\Behram\\Downloads\\Behram.txt", true);
+        PrintWriter outputFile = new PrintWriter(fWriter);
+        outputFile.println("Mami");
+        outputFile.println("Lorik");
+        outputFile.println("Troi");
+        outputFile.println("Babi");
+        outputFile.close();
     }
 
 }
