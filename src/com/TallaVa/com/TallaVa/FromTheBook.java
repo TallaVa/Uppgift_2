@@ -247,6 +247,10 @@ public class FromTheBook {
         //Create a scanner
         Scanner keyboard = new Scanner(System.in);
 
+        //Get the number of friends.
+        System.out.print("How many friends do you have?");
+        numFriends = keyboard.nextInt();
+
         //Consume the remaining newline character.
         keyboard.nextLine();
         
