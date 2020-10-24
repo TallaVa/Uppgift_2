@@ -290,7 +290,7 @@ public class FromTheBook {
         outputFile.close();
         */
     
-        // Reading from a file.
+        /* Reading from a file.
 
         //Create a Scanner object for keyboardinput
         Scanner keyboard = new Scanner(System.in);
@@ -304,11 +304,44 @@ public class FromTheBook {
         Scanner inputFile = new Scanner(myFile);
 
         //Read the first line from the file.
-        String line = inputFile.nextLine();
+        while (inputFile.hasNext())
+        {
+            //Read the next name.
+            String line = inputFile.nextLine();
 
-        //Display the line.
-        System.out.println("The first line in the file is: ");
-        System.out.println(line);
+            //Display the line.
+            System.out.println(line);
+        }
+
+       //Close the file.
+        inputFile.close();
+
+        */
+
+
+        //Test if file exist before run
+
+        //test if file exist.
+        File myFile = new File("Behram.txt");
+        if(!myFile.exists())
+        {
+            System.out.println("The file Behram.txt is not found.");
+            System.exit(0);
+        }
+
+        //Open the file for reading.
+        Scanner inputFile = new Scanner(myFile);
+
+        //Read all of the values from the file
+        //and calculate their total.
+        while (inputFile.hasNext())
+        {
+            //Read a value from the file.
+            String line = inputFile.nextLine();
+
+            //Display the Line.
+            System.out.println(line);
+        }
 
         //Close the file.
         inputFile.close();
