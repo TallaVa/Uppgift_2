@@ -1,7 +1,7 @@
 package com.TallaVa;
 
 import javax.swing.JOptionPane;
-//import java.awt.*;
+import java.awt.*;
 import java.util.Scanner;
 import java.io.*;
 
@@ -278,7 +278,7 @@ public class FromTheBook {
         */
 
 
-        // Hur man skriver något på ett enkelt sätt . . eller lägger till annat i en existerande fil.
+        /* Hur man skriver något på ett enkelt sätt . . eller lägger till annat i en existerande fil.
        //för att skapa Writter classen som gör att man kan addera mer och mer
         FileWriter fWriter = new FileWriter("C:\\Users\\Behram\\Downloads\\Behram.txt", true);
         //Skapar objektet så man kan använda print och println metoderna.
@@ -288,6 +288,12 @@ public class FromTheBook {
         outputFile.println("Troi");
         outputFile.println("Babi");
         outputFile.close();
+        */
+    
+        // Reading from a file.
+
+        File myFile = new File("Behram.txt");
+        Scanner inputFile = new Scanner(myFile);
 
     }
 
