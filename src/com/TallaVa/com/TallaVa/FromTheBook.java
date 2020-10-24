@@ -292,8 +292,26 @@ public class FromTheBook {
     
         // Reading from a file.
 
-        File myFile = new File("Behram.txt");
+        //Create a Scanner object for keyboardinput
+        Scanner keyboard = new Scanner(System.in);
+
+        //Get the filename.
+        System.out.print("Enter the name of the file: ");
+        String filename = keyboard.nextLine();
+
+        //Open the file
+        File myFile = new File(filename);
         Scanner inputFile = new Scanner(myFile);
+
+        //Read the first line from the file.
+        String line = inputFile.nextLine();
+
+        //Display the line.
+        System.out.println("The first line in the file is: ");
+        System.out.println(line);
+
+        //Close the file.
+        inputFile.close();
 
     }
 
