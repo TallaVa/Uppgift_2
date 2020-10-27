@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 import java.awt.*;
 import java.util.Scanner;
 import java.io.*;
+import java.util.*;
 
 public class FromTheBook {
 
@@ -349,6 +350,45 @@ public class FromTheBook {
         inputFile.close();
         */
 
+
+        // The Random Example
+
+        // Variables
+
+        int number1;
+        int number2;
+        int sum;
+        int userAnswer;
+
+        // Create a scanner.
+        Scanner keyboard = new Scanner(System.in);
+
+        // Create a randome class object.
+        Random slumpTal = new Random();
+
+        // Get two numbers.
+        number1 = slumpTal.nextInt(100);
+        number2 = slumpTal.nextInt(100);
+
+        // Display an additiona problem
+        System.out.println("What is the answer to the " +
+                            " following problem?");
+        System.out.println(number1 + " + " + number2 + " = ? ");
+
+        // Calculate the answer
+        sum = number1 + number2;
+
+        // Get the user's answer.
+        userAnswer = keyboard.nextInt();
+
+        // Display the user's results
+        if (userAnswer == sum)
+            System.out.println("Correct!");
+        else
+        {
+            System.out.println("Sorry, wrong answer. " +
+                " The correct answer is " + sum);
+        }
 
 
     }
