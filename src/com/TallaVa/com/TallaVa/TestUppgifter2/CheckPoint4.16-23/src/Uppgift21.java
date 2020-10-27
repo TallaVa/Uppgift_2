@@ -7,7 +7,8 @@ public class Uppgift21 {
     
         //öppna fil och läser första raden.
         File file = new File("Behram.txt");
-        Scanner inputFile = ne
+        Scanner inputFile = new Scanner(file);
+        
 
         
     }
