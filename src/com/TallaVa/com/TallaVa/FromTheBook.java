@@ -279,8 +279,10 @@ public class FromTheBook {
 
 
         /* Hur man skriver något på ett enkelt sätt . . eller lägger till annat i en existerande fil.
-       //för att skapa Writter classen som gör att man kan addera mer och mer
+       
+        //för att skapa Writter classen som gör att man kan addera mer och mer
         FileWriter fWriter = new FileWriter("C:\\Users\\Behram\\Downloads\\Behram.txt", true);
+        
         //Skapar objektet så man kan använda print och println metoderna.
         PrintWriter outputFile = new PrintWriter(fWriter);
         outputFile.println("Mami");
@@ -319,7 +321,7 @@ public class FromTheBook {
         */
 
 
-        //Test if file exist before run
+        /*Test if file exist before run
 
         //test if file exist.
         File myFile = new File("Behram.txt");
@@ -345,6 +347,9 @@ public class FromTheBook {
 
         //Close the file.
         inputFile.close();
+        */
+
+
 
     }
 
