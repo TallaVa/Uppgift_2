@@ -351,7 +351,7 @@ public class FromTheBook {
         */
 
 
-        // The Random Example
+        /* The Random Example
 
         // Variables
 
@@ -388,6 +388,32 @@ public class FromTheBook {
         {
             System.out.println("Sorry, wrong answer. " +
                 " The correct answer is " + sum);
+        }
+        */
+
+        //The Dice example
+
+        String again = "y";
+        int die1;
+        int die2;
+
+        //Create a scanner
+        Scanner keyboard = new Scanner(System.in);
+
+        //Create a random object to generate random numbers.
+        Random rand = new Random();
+
+        //Simulate rolling the dice.
+        while (again.equalsIgnoreCase("y"))
+        {
+            System.out.println("Roll the dice . . .");
+            die1 = rand.nextInt(6) + 1;
+            die2 = rand.nextInt(6) + 1;
+            System.out.println("Therir values are: ");
+            System.out.println(die1 + " " + die2);
+
+            System.out.println("Roll them again (y = yes)? ");
+            again = keyboard.nextLine();
         }
 
 
