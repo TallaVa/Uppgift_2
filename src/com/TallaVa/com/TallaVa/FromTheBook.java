@@ -391,7 +391,7 @@ public class FromTheBook {
         }
         */
 
-        //The Dice example
+        /*The Dice example
 
         String again = "y";
         int die1;
@@ -414,6 +414,9 @@ public class FromTheBook {
 
             System.out.println("Roll them again (y = yes)? ");
             again = keyboard.nextLine();
+            */
+
+            
         }
 
 
