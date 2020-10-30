@@ -13,25 +13,31 @@ public class LearningChapter4 {
 
         int number;     //Talet användaren valt
         int sum = 0;        //Minne som håller tal efter varje itteration
-        
+        int count = 0;
 
         
         //Skapa Scanner
         Scanner keyboard = new Scanner(System.in);
 
         //Fråga användaren om ett nummer mellan 1-20
-
         System.out.println("Mata in ett tal mellan 1-20: ");
         number = keyboard.nextInt();
         
-        if (number >= 20 && number <=1)
-                   
-            for (number = ) 
-            {
-                sum += 1;
-                i++;
-            }    
-        System.out.println(sum);        
+        //Loop där det ska loopa och addera fram till och med talet man valt.
+        if (number > 20 && number < 1)
+             {
+                 System.out.println("Du är inte i intervallet 1-20, försök igen.");
+             }  
+             
+             else
+             {
+                while (count < number) 
+                {
+                    sum += count;
+                    count++;
+                }       
+                System.out.println(sum + number); 
+             }       
 
     }
 
