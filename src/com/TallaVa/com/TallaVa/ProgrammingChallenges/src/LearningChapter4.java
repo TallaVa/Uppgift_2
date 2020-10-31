@@ -54,8 +54,7 @@ public class LearningChapter4 {
         //Skapar variabler
         int speed;
         int time;
-        int distance;
-
+        
         //Skapar en scanner.
         Scanner keyboard = new Scanner(System.in);
 
@@ -67,13 +66,17 @@ public class LearningChapter4 {
         System.out.println("Hur många timmar har du kört ?: ");
         time = keyboard.nextInt();
 
-        //Loop för att få ut en lista på miles kört. i en lista med timmar.
+        int i = 0;
+        // Loop för att få ut en lista på miles kört. i en lista med timmar.
         while(i < time)
         {
             System.out.println("Hour\t\t Distance Traveled");
             System.out.println("---------------------------");
-            System.out.println();
+            System.out.println(i + "\t\t" + (time*speed));
+            i++;
         }
+
+        System.exit(0);
 
 
 
