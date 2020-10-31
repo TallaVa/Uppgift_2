@@ -23,13 +23,13 @@ public class LearningChapter4 {
         System.out.println("Mata in ett tal mellan 1-20: ");
         number = keyboard.nextInt();
         
-        //Loop där det ska loopa och addera fram till och med talet man valt.
-        if (number > 20 && number < 1)
+        //Loop där det ska loopa och addera fram till och med talet man valt sedan summera allt.
+        if (number > 20 || number < 1)
              {
                  System.out.println("Du är inte i intervallet 1-20, försök igen.");
-             }  
-             
-             else
+                 
+             }
+        else
              {
                 while (count < number) 
                 {
@@ -37,7 +37,9 @@ public class LearningChapter4 {
                     count++;
                 }       
                 System.out.println(sum + number); 
-             }       
+             }   
+             
+             System.exit(0);
 
     }
 
