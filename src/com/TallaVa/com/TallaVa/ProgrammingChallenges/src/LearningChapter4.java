@@ -12,8 +12,8 @@ public class LearningChapter4 {
         */
 
         int number;     //Talet användaren valt
-        int sum = 0;        //Minne som håller tal efter varje itteration
-        int count = 0;
+        int sum = 0;    //Minne som håller tal efter varje itteration
+        int count = 0;  //Counter för att räkna antal gånger programmet ska göra en loop
 
         
         //Skapa Scanner
