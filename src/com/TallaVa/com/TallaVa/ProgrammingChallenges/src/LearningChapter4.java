@@ -9,7 +9,7 @@ public class LearningChapter4 {
         /* Sum of Numbers
             användaren ska slå in ett tal mellan 1-20 och programmet ska 
             summera allt upp till det heltalet användaren valt.
-        */
+    
 
         int number;     //Talet användaren valt
         int sum = 0;    //Minne som håller tal efter varje itteration
@@ -40,6 +40,43 @@ public class LearningChapter4 {
              }   
              
              System.exit(0);
+
+             */
+
+        // Uppgift 4-2
+        
+        /* Distance Traveled
+             skriva en kod för att räkna längden man åkt och frågar
+             användaren hur många timmar samt längd i miles man kört.
+             programmet ska då presentera dessa längder efter timmar.
+        */
+        
+        //Skapar variabler
+        int speed;
+        int time;
+        int distance;
+
+        //Skapar en scanner.
+        Scanner keyboard = new Scanner(System.in);
+
+        //Fråga användaren efter hastighet
+        System.out.println("Vad har din hastighet vairt?: ");
+        speed = keyboard.nextInt();
+
+        //fråga användaren efter tid.
+        System.out.println("Hur många timmar har du kört ?: ");
+        time = keyboard.nextInt();
+
+        //Loop för att få ut en lista på miles kört. i en lista med timmar.
+        while(i < time)
+        {
+            System.out.println("Hour\t\t Distance Traveled");
+            System.out.println("---------------------------");
+            System.out.println();
+        }
+
+
+
 
     }
 
