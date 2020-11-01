@@ -85,6 +85,7 @@ public class LearningChapter4 {
         }
 
         System.exit(0);
+        keyboard.close();
 
 
 
