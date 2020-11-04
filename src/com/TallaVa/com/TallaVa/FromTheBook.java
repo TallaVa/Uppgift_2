@@ -1,10 +1,10 @@
 package com.TallaVa;
 
-import javax.swing.JOptionPane;
-import java.awt.*;
-import java.util.Scanner;
+//import javax.swing.JOptionPane;
+//import java.awt.*;
+//import java.util.Scanner;
 import java.io.*;
-import java.util.*;
+//import java.util.*;
 
 public class FromTheBook {
 
@@ -414,11 +414,11 @@ public class FromTheBook {
 
             System.out.println("Roll them again (y = yes)? ");
             again = keyboard.nextLine();
-            */
+            
 
             
         }
-
+        */
 
     }
 

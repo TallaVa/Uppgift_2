@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 public class LearningChapter4 {
@@ -55,12 +56,13 @@ public class LearningChapter4 {
         int speed;
         int time;
         int distance = 0;
+                
         
         //Skapar en scanner.
         Scanner keyboard = new Scanner(System.in);
 
         //Fråga användaren efter hastighet
-        System.out.println("Vad har din hastighet vairt?: ");
+        System.out.println("Vad har din hastighet varit?: ");
         speed = keyboard.nextInt();
 
         //fråga användaren efter tid.
@@ -71,7 +73,7 @@ public class LearningChapter4 {
         distance = speed;
         
         //Skapa en variabel för att räkna loops med.
-        int i = 1;
+        int i = 1;     
 
         // Loop för att få ut en lista på miles kört. i en lista med timmar.
         while(i <= time)
@@ -81,12 +83,15 @@ public class LearningChapter4 {
             System.out.println(i +" h" + "\t\t" + distance + " miles");
             System.out.println();   //En extra rad för att se bättre ut i utskrift
             i++;
-            distance += speed;
+            distance += speed;            
+
         }
 
+       
         System.exit(0);
         keyboard.close();
-
+       
+        
 
 
     }
