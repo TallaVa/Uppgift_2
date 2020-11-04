@@ -95,7 +95,7 @@ public class LearningChapter4 {
        
         */
         /* Uppgift 4. räkna ut hur mycket totalen blir över en period om man tjärnar 
-            1 penny per dag i hela dollar och inte i pennys */
+            1 penny per dag i hela dollar och inte i pennys
         //Variabler
         int days;
         double pennys;
@@ -127,10 +127,21 @@ public class LearningChapter4 {
         }
 
         keyboard.close();
+        */
 
+        /* Uppgift 5. frågar användaren om ett ord (String) och
+            en bokstav (Char) som man sedan ska räkna hur många
+            gånger den dycker upp i ordet man angav.
+        */
 
+        //Variabler
 
+        String ord;
+        char bokstav;
 
+        //Skapa Scanner
+        Scanner keyboard = new Scanner(System.in);
+        
 
 
     }
