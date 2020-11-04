@@ -1,6 +1,8 @@
 import java.io.*;
 import java.util.*;
 
+import javax.lang.model.util.ElementScanner14;
+
 public class LearningChapter4 {
     public static void main(String[] args) throws Exception {
         
@@ -50,7 +52,7 @@ public class LearningChapter4 {
              skriva en kod för att räkna längden man åkt och frågar
              användaren hur många timmar samt längd i miles man kört.
              programmet ska då presentera dessa längder efter timmar.
-        */
+        
         
         //Skapar variabler
         int speed;
@@ -91,7 +93,44 @@ public class LearningChapter4 {
         System.exit(0);
         keyboard.close();
        
-        
+        */
+        /* Uppgift 4. räkna ut hur mycket totalen blir över en period om man tjärnar 
+            1 penny per dag i hela dollar och inte i pennys */
+        //Variabler
+        int days;
+        double pennys;
+        double sum = 0;
+
+        //Skapa Scanner
+        Scanner keyboard = new Scanner (System.in);
+
+        //Fråga användaren om arbets period i dagar.
+        System.out.println("Ange arbets perioden i dagar: ");
+        days = keyboard.nextInt();
+
+        //Fråga användaren efter hur många pennys man fått per dag.
+        System.out.println("hur många pennys fick du per dag? ");
+        pennys = keyboard.nextInt();
+
+        if(pennys <= 0)
+        {
+            System.out.println("Fel. pennys kan inte vara under 1 penny");
+        }
+        else if(days <= 0)
+        {
+            System.out.println("Fel. Dagar kan inte vara under 1 dag");
+        }
+        else 
+        {
+            sum = (pennys*days)/10;
+            System.out.println("$" + sum);
+        }
+
+        keyboard.close();
+
+
+
+
 
 
     }
