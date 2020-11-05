@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class LearningChapter4 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         
         
         // Uppgift 4-1
@@ -138,6 +138,7 @@ public class LearningChapter4 {
         String ord;
         String bokstav;
         char c;
+        int count = 0;
 
         //Skapa Scanner
         Scanner keyboard = new Scanner(System.in);
@@ -152,10 +153,19 @@ public class LearningChapter4 {
         bokstav = keyboard.nextLine();
         c = bokstav.charAt(0);
 
-        
-        //Test
-        System.out.println(ord);
-        System.out.println(bokstav);
+        //Loop att räknar ut hur många gånger bokstaven du uppgav finns i ordet du uppgav.
+        for(int i =0; i < ord.length(); i++)
+        {
+            if (ord.charAt(i) == c)
+            {
+                count++;
+            }
+        }
+        //Stäng scannern
+        keyboard.close();
+
+        //Skriv ut hur många gånger bokstaven finns i ordet.
+        System.out.println("Bokstaven uppkom ett totalt " + count + " gånger");
 
 
 
