@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-import javax.lang.model.util.ElementScanner14;
 
 public class LearningChapter4 {
     public static void main(String[] args) throws Exception {
@@ -137,7 +136,8 @@ public class LearningChapter4 {
         //Variabler
 
         String ord;
-        char bokstav;
+        String bokstav;
+        char c;
 
         //Skapa Scanner
         Scanner keyboard = new Scanner(System.in);
@@ -145,10 +145,20 @@ public class LearningChapter4 {
         //Fråga användaren om ett ord
         System.out.println("Ge mig ett ord: ");
         ord = keyboard.nextLine();
-
+        
+        
         //Fråga användaren om en bokstav från ordet
         System.out.println("Ge mig en bokstav från ordet du angav innan: ");
-        bokstav = keyboard.nextChar();
+        bokstav = keyboard.nextLine();
+        c = bokstav.charAt(0);
+
+        
+        //Test
+        System.out.println(ord);
+        System.out.println(bokstav);
+
+
+
 
 
     }
