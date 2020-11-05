@@ -141,7 +141,14 @@ public class LearningChapter4 {
 
         //Skapa Scanner
         Scanner keyboard = new Scanner(System.in);
-        
+
+        //Fråga användaren om ett ord
+        System.out.println("Ge mig ett ord: ");
+        ord = keyboard.nextLine();
+
+        //Fråga användaren om en bokstav från ordet
+        System.out.println("Ge mig en bokstav från ordet du angav innan: ");
+        bokstav = keyboard.nextChar();
 
 
     }
