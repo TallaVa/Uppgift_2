@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class LearningChapter4 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         
         
         // Uppgift 4-1
