@@ -131,8 +131,7 @@ public class LearningChapter4 {
         /* Uppgift 5. frågar användaren om ett ord (String) och
             en bokstav (Char) som man sedan ska räkna hur många
             gånger den dycker upp i ordet man angav.
-
-         */
+        
         
         //Variabler
 
@@ -166,13 +165,13 @@ public class LearningChapter4 {
         keyboard.close();
 
         //Skriv ut hur många gånger bokstaven finns i ordet.
-        System.out.println("Bokstaven uppkom ett totalt " + count + " gånger");
-
-
+        System.out.println("Bokstaven förekom ett totalt " + count + " gånger");
 
         
+        */
 
-
+        
+        
 
     }
 
