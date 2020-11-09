@@ -167,11 +167,11 @@ public class LearningChapter4 {
         //Skriv ut hur många gånger bokstaven finns i ordet.
         System.out.println("Bokstaven förekom ett totalt " + count + " gånger");
 
-        
         */
+        
+        
+        
 
-        
-        
 
     }
 
