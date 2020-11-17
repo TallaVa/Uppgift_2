@@ -1,7 +1,5 @@
 package com.TallaVa.ProgrammingChallenges.src;
 
-import java.io.IOException;
-
 import javax.swing.JOptionPane;
 
 public class Uppgift4_2 {
