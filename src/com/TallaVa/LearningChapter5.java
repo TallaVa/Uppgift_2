@@ -87,7 +87,7 @@ public class LearningChapter5 {
            //Display the value in myValue.
            System.out.println("Now the value is " + myValue);
            */
-       
+       /*
 
            int total, value1 = 20, value2 = 40;
              
@@ -108,7 +108,7 @@ public class LearningChapter5 {
              @param num2 The second number to be added.
              @return The sum of num1 and num2.
           */
-          
+          /*
           public static int sum(int num1, int num2)
           {
              int result;  // result is a local variable
@@ -119,7 +119,8 @@ public class LearningChapter5 {
              // Return the value in the result variable.
              return result;
           }  
-
+          */
+        }          
 
 
 }
