@@ -47,9 +47,11 @@ public class Uppgift2 {
             input = keyboard.nextDouble();
             storst = input;
             minst = storst;
-            
+                        
             while (keyboard.hasNextDouble())
             {
+                System.out.println("skriv in ett tal : " +
+                                " och avsluta med '.' ");
                 double tal = keyboard.nextDouble();
                 storst = Math.max(storst, tal);
                 minst = Math.min(minst, tal);
