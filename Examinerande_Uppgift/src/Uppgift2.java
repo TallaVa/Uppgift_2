@@ -1,9 +1,5 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
-
-import javax.swing.JOptionPane;
 
 public class Uppgift2 {
     public static void main(String[] args) throws IOException {
@@ -30,7 +26,7 @@ public class Uppgift2 {
         System.exit(0);
     }
 
-    public static double getTal() throws IOException
+    public static double getTal()
     {
         Double listaTal = 0.0;    //Variabel för att hålla allt användaren skriver in
         Double storst = 0.0;
@@ -47,7 +43,9 @@ public class Uppgift2 {
             input = keyboard.nextDouble();
             storst = input;
             minst = storst;
-            
+
+            //Loop som kollar om det finns fler inmatningar från användaren sen
+            //sorterar till vi får fram största och minsta inmatningen.
             while (keyboard.hasNextDouble())
             {
                 double tal = keyboard.nextDouble();
