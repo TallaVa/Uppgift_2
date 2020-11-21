@@ -43,11 +43,17 @@ public class Uppgift2 {
             input = keyboard.nextDouble();
             storst = input;
             minst = storst;
+<<<<<<< HEAD
 
             //Loop som kollar om det finns fler inmatningar från användaren sen
             //sorterar till vi får fram största och minsta inmatningen.
+=======
+                        
+>>>>>>> 503caff2c57ae26824b8f933cd7afe45782dd2b6
             while (keyboard.hasNextDouble())
             {
+                System.out.println("skriv in ett tal : " +
+                                " och avsluta med '.' ");
                 double tal = keyboard.nextDouble();
                 storst = Math.max(storst, tal);
                 minst = Math.min(minst, tal);
