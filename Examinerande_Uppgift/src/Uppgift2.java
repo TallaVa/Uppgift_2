@@ -1,8 +1,9 @@
-import java.io.*;
 import java.util.Scanner;
 
-public class Uppgift2 {
-    public static void main(String[] args) throws IOException {
+public class Uppgift2 
+{
+    public static void main(String[] args) 
+    {
 
         /**
          * Uppgift 2 del A) skapa ett program som tar in flytande tal och printar ut
@@ -10,57 +11,36 @@ public class Uppgift2 {
          */
 
         // Variabler
-        double tal; // Variabel som ska hålla talet man matat in.
-        // double stor; //Variabel som håller det största talet.
-        // double liten; //Variabel som håller det minsta talet.
-
-        // Få in de tal som användaren skrivit.
-        tal = getTal();
-
-        // Få det största och det minsta talet.
-        // stor = getBig();
-        // liten = getSmall();
-
-        // Visa upp resultatet.
-        // visaResults(stor, liten);
-        System.exit(0);
-    }
-
-    public static double getTal()
-    {
-        Double listaTal = 0.0;    //Variabel för att hålla allt användaren skriver in
-        Double storst = 0.0;
-        Double minst = 0.0;
-        double input = 0.0;
+        double tal;         // Variabel som ska hålla talet man matat in.
+        double stor;        // Variabel som håller det största talet.
+        double liten;       // Variabel som håller det minsta talet.     
+        double input;       // Variabel som håller inmatningen från användaren
     
-        //Skapa en scanner
+        // Skapa en scanner
         Scanner keyboard = new Scanner(System.in);
 
-            //Fråga användaren efter olika tal och när användaren är nöjd
-            //så ska den avsluta med en "."     
-            System.out.println("skriv in ett tal : " +
-                                " och avsluta med '.' ");
+            // Fråga användaren efter olika tal och när användaren är nöjd
+            // så ska den avsluta med en "."     
+            System.out.println("skriv in tal tills du är nöjd " +
+                                " och avsluta med '.' och ENTER efter varje inmatning.");
             input = keyboard.nextDouble();
-            storst = input;
-            minst = storst;
+            stor = input;
+            liten = stor;
 
-            //Loop som kollar om det finns fler inmatningar från användaren sen
-            //sorterar till vi får fram största och minsta inmatningen.                        
+            // Loop som kollar om det finns fler inmatningar från användaren sen
+            // sorterar tills vi får fram största och minsta inmatningen.                        
             while (keyboard.hasNextDouble())
             {
-                System.out.println("skriv in ett tal : " +
-                                " och avsluta med '.' ");
-                double tal = keyboard.nextDouble();
-                storst = Math.max(storst, tal);
-                minst = Math.min(minst, tal);
+                tal = keyboard.nextDouble();
+                stor = Math.max(stor, tal);
+                liten = Math.min(liten, tal);
             }
         
-        System.out.println("Minst är: " + minst + " " + 
-            " och störst blir: " + storst);
-
-        keyboard.close();
+            // Här printar vi ut resultatet
+        System.out.println("Minst är: " + liten + " " + 
+            " och störst blir: " + stor);
         
-            
-    return listaTal;
+            keyboard.close();
+
     }
 }
