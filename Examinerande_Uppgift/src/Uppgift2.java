@@ -21,8 +21,8 @@ public class Uppgift2
 
             // Fråga användaren efter olika tal och när användaren är nöjd
             // så ska den avsluta med en "."     
-            System.out.println("skriv in tal tills du är nöjd " +
-                                " och avsluta med '.' och ENTER efter varje inmatning.");
+            System.out.println("skriv in vilka tal du vill tills du är nöjd, enter efter varje inmatning " +
+                                " och avsluta med '.'");
             input = keyboard.nextDouble();
             stor = input;
             liten = stor;
