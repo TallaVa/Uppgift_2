@@ -6,8 +6,10 @@ public class Uppgift2
     {
 
         /**
-         * Uppgift 2 del A) skapa ett program som tar in flytande tal och printar ut
+         * Uppgift 2 del C) skapa ett program som tar in flytande tal och printar ut
          * det. presenterar också det som är störst och det som är minst.
+         * VG . tilläg är att det skapas en fil med användarens inmatning
+         * och resultat.
          */
 
         // Variabler
@@ -19,11 +21,14 @@ public class Uppgift2
         // Skapa en scanner
         Scanner keyboard = new Scanner(System.in);
 
+        
+
             // Fråga användaren efter olika tal och när användaren är nöjd
             // så ska den avsluta med en "."     
             System.out.println("skriv in vilka tal du vill tills du är nöjd, enter efter varje inmatning " +
                                 " och avsluta med '.'");
             input = keyboard.nextDouble();
+
             stor = input;
             liten = stor;
 
@@ -36,11 +41,12 @@ public class Uppgift2
                 liten = Math.min(liten, tal);
             }
         
-            // Här printar vi ut resultatet
+        // Här printar vi ut resultatet
         System.out.println("Minst är: " + liten + " " + 
             " och störst blir: " + stor);
         
-            keyboard.close();
+        //Stänger Scannern.
+        keyboard.close();
 
     }
 }

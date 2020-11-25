@@ -1,0 +1,6 @@
+Användar input: 87219.0
+Användar input: 0.8
+Användar input: 9.3
+Användar input: 4.0
+Störst: 87219.0
+Minst: 0.8
