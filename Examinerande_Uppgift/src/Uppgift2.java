@@ -6,7 +6,7 @@ public class Uppgift2
     {
 
         /**
-         * Uppgift 2 del C) skapa ett program som tar in flytande tal och printar ut
+         * Uppgift 2 del A) skapa ett program som tar in flytande tal och printar ut
          * det. presenterar också det som är störst och det som är minst.
          */
 
