@@ -14,46 +14,49 @@ public class Uppgift2B
          */
 
         // Variabler
-        String mem; // håller ett minne av uppdelningen
-        double number;  // håller sedan värdet i double format
-        double stor = 0.0;
-        double liten = 0.0;
+        String mem;             // håller ett minne av uppdelningen.
+        double number;          // håller sedan värdet i double format.
+        double stor = 0.0;      // håller det största värdet.
+        double liten = 0.0;     // håller det minsta värdet.
                
-        // Skapa en skanner
-        Scanner keyboard = new Scanner(System.in);
-        
-        // Öppnar filen vi har skapat på skrivbordet
-        File file = new File("C:\\Users\\bere\\IdeaProjects\\Uppgift_2\\Examinerande_Uppgift\\tal2.txt");
-        Scanner inputFile = new Scanner(file);      // Skapar scanner som skannar filen
-        inputFile.useDelimiter(";");                // Använder oss av en Dlimiter som är satt på ";"
-        mem = inputFile.next();
-        number = Double.parseDouble(mem);
-        stor = number;
+               
+        // Öppnar filen vi har skapat på skrivbordet. Nedan anger du filens adress 
+        // innan programmet kan söka igenom filen.
+        File file = new File("***");
+
+        Scanner inputFile = new Scanner(file);      // Skapar scanner som skannar filen.
+        inputFile.useDelimiter(";");                // Använder oss av en Delimiter som är satt på ";".
+        mem = inputFile.next();                     // Variabel som håller det som läsese över fårn filen.
+        number = Double.parseDouble(mem);           // Omvandlar till double.
+        stor = number;                              // Data sparas på två variabler Stor och Liten.
         liten = number;
 
-       while(inputFile.hasNext())
-        { 
-            if( number < liten)
-            {
-                liten = number;
-            }
-            else if (number > stor)
-            {
-                stor = number;
-            }
+        // Loop för att utgöra vilken data är störst och vilken är minst.
+        // If satser för att utesluta absolut minsta och största från filen.
+        while(inputFile.hasNext())
+            { 
+                if( number < liten)
+                {
+                    liten = number;
+                }
+                else if (number > stor)
+                {
+                    stor = number;
+                }
             mem = inputFile.next();
             number = Double.parseDouble(mem);
 
-            System.out.println("Största: " + stor + " minsta: " + liten);
-            
-        }
+            /* Om man vill se prossesen så ta bort den här kommentaren.
+           System.out.println("Största: " + stor + " minsta: " + liten);
+           */
+            }
                         
         System.out.println("Efter att programmet läst filen så är det "+ 
             "största talet : " + stor + " och det minsta : " + liten);
             
-        
+        // Stänger Fil scannern.
         inputFile.close();
-        keyboard.close();
+     
 
 
     }
