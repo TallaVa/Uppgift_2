@@ -20,9 +20,9 @@ public class Uppgift2B
         double liten = 0.0;     // håller det minsta värdet.
                
                
-        // Öppnar filen vi har skapat på skrivbordet. Nedan anger du filens adress 
+        // Nedan ersätter du *** med filens adress. 
         // innan programmet kan söka igenom filen.
-        File file = new File("***");
+        File file = new File("***");                // Ersätt *** med filens adress.
 
         Scanner inputFile = new Scanner(file);      // Skapar scanner som skannar filen.
         inputFile.useDelimiter(";");                // Använder oss av en Delimiter som är satt på ";".
@@ -50,7 +50,8 @@ public class Uppgift2B
            System.out.println("Största: " + stor + " minsta: " + liten);
            */
             }
-                        
+         
+        // Printar ut resultatet.
         System.out.println("Efter att programmet läst filen så är det "+ 
             "största talet : " + stor + " och det minsta : " + liten);
             

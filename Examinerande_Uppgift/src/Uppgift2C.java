@@ -25,9 +25,10 @@ public class Uppgift2C {
             // Skapa filen allt ska exporteras till
             PrintWriter utData = new PrintWriter("utData.txt");
 
-                // Fråga användaren efter olika tal och när användaren är nöjd
-                // så ska den avsluta med en "."    
-                // Användar indata kommer att printas till filen utData.txt. 
+                /* Fråga användaren efter olika tal och när användaren är nöjd
+                   så ska den avsluta med en "."    
+                   Användar indata kommer att printas till filen utData.txt. 
+                */
                 System.out.println("skriv in vilka tal du vill tills du är nöjd, enter efter varje inmatning " +
                                     " och avsluta med '.'");
                 input = keyboard.nextDouble();
@@ -35,9 +36,10 @@ public class Uppgift2C {
                 stor = input;
                 liten = stor;
 
-                // Loop som kollar om det finns fler inmatningar från användaren sen
-                // sorterar tills vi får fram största och minsta inmatningen.  
-                // Tilläg är då att utData printar ut allt som användaren matar in till en fil                      
+                /* Loop som kollar om det finns fler inmatningar från användaren sen
+                   sorterar tills vi får fram största och minsta inmatningen.  
+                   Tilläg är då att utData printar ut allt som användaren matar in till en fil
+                */                       
                 while (keyboard.hasNextDouble())
                 {
                     tal = keyboard.nextDouble();
