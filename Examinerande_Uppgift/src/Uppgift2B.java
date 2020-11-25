@@ -18,7 +18,7 @@ public class Uppgift2B
         double number;  // håller sedan värdet i double format
         double stor = 0.0;
         double liten = 0.0;
-        
+               
         // Skapa en skanner
         Scanner keyboard = new Scanner(System.in);
         
@@ -29,27 +29,29 @@ public class Uppgift2B
         mem = inputFile.next();
         number = Double.parseDouble(mem);
         stor = number;
-        liten = stor;
+        liten = number;
 
-        while(inputFile.hasNext())
+       while(inputFile.hasNext())
         { 
-            double test = number.nextDouble();
-            stor = Math.max(stor, test);
-            liten = Math.min(liten, test);
+            if( number < liten)
+            {
+                liten = number;
+            }
+            else if (number > stor)
+            {
+                stor = number;
+            }
+            mem = inputFile.next();
+            number = Double.parseDouble(mem);
+
+            System.out.println("Största: " + stor + " minsta: " + liten);
+            
         }
                         
-
-        /** Loop som ska läsa tills det inte finns något mer att läsa 
-        while(inputFile.hasNext())
-        {          
-            stor = Math.max(stor, number);
-            liten = Math.min(liten, number);         
-                    
-            System.out.println(number);
-        }
-        */
-    
-        System.out.println(stor + " och " + liten);
+        System.out.println("Efter att programmet läst filen så är det "+ 
+            "största talet : " + stor + " och det minsta : " + liten);
+            
+        
         inputFile.close();
         keyboard.close();
 
